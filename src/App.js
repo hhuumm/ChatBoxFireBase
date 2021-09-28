@@ -9,21 +9,22 @@ import 'firebase/compat/analytics';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { useCollectionData } from 'react-firebase-hooks/firestore';
 
+
 firebase.initializeApp({
 
-apiKey: `${process.env.apiKey}`,
+  apiKey: process.env.REACT_APP_APIKEY,
 
-authDomain: `${process.env.authDomain}`,
+  authDomain: process.env.authDomain,
 
-projectId: `${process.env.projectId}`,
+  projectId: process.env.REACT_APP_PROJECTID ,
 
-storageBucket: `${process.env.storageBucket}`,
+  storageBucket: process.env.storageBucket,
 
-messagingSenderId: `${process.env.messagingSenderId}`,
+  messagingSenderId: process.env.messagingSenderId,
 
-appId: `${process.env.appId}`,
+  appId: `${process.env.REACT_APP_APPID }`,
 
-measurementId: `${process.env.measurementId}`
+  measurementId: `${process.env.measurementId}`
 
 });
 
@@ -39,7 +40,7 @@ function App() {
   return (
     <div className="App">
       <header>
-        <h1>⚛️🔥💬</h1>
+        <h1>(8^(|))</h1>
         <SignOut />
       </header>
 
